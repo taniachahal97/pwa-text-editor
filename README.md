@@ -11,6 +11,42 @@ The application is a web text editor where the user can create notes with or wit
 Clone the pwa-text-editor repository to your local machine. Start the application using the `npm run start:dev` command 
 
 
+# User Story
+
+AS A developer
+I WANT to create notes or code snippets with or without an internet connection
+SO THAT I can reliably retrieve them for later use
+
+
+# Acceptance Criteria
+
+GIVEN a text editor web application
+WHEN I open my application in my editor
+THEN I should see a client server folder structure
+WHEN I run `npm run start` from the root directory
+THEN I find that my application should start up the backend and serve the client
+WHEN I run the text editor application from my terminal
+THEN I find that my JavaScript files have been bundled using webpack
+WHEN I run my webpack plugins
+THEN I find that I have a generated HTML file, service worker, and a manifest file
+WHEN I use next-gen JavaScript in my application
+THEN I find that the text editor still functions in the browser without errors
+WHEN I open the text editor
+THEN I find that IndexedDB has immediately created a database storage
+WHEN I enter content and subsequently click off of the DOM window
+THEN I find that the content in the text editor has been saved with IndexedDB
+WHEN I reopen the text editor after closing it
+THEN I find that the content in the text editor has been retrieved from our IndexedDB
+WHEN I click on the Install button
+THEN I download my web application as an icon on my desktop
+WHEN I load my web application
+THEN I should have a registered service worker using workbox
+WHEN I register a service worker
+THEN I should have my static assets pre cached upon loading along with subsequent pages and static assets
+WHEN I deploy to Heroku
+THEN I should have proper build scripts for a webpack application
+
+
 # Usage
 
 The following image demonstrates the application functionality:
@@ -30,37 +66,6 @@ The following image shows the application's IndexedDB storage:
 ![pwa-text-editor]](Assets/Jate_database.png)
 
 
-# User Story
+# Link to deployed heroku application
 
-
-
-# Acceptance Criteria
-
-GIVEN a hiker wants to go for a hike.
-WHEN the hiker opens the application on the application.
-THEN the hiker is able to input a specific location to search for areas to hike.
-
-WHEN the hiker submits the location request.
-THEN The application displays a list of walking locations in the area with information such as name, address, and image.
-
-WHEN the hiker submits the location request.
-THEN the a forecast is displayed of the overall conditions, including temperature and day and night outlook.
-
-WHEN the hiker views the weather section.
-THEN they see a 5 day forecast to plan their walk in advance.
-
-WHEN the hiker views the page.
-THEN there is an option to generate some fast facts to discuss with their companions.
-
-WHEN the hiker clicks wants to revisit their search history.
-THEN all the previous searches are stored for them and displayed.
-
-# Screenshot 
-The following screenshot demonstrates the application functionality:
-
-
-
-
-# Link to deployed application
-
-Link to Walk-through video: https://drive.google.com/file/d/1UsrTcet69M6ysXiunBOTQuvrCSN9FdL7/view
+https://blooming-everglades-09901.herokuapp.com/
